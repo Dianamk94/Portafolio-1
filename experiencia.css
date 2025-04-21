@@ -2,37 +2,81 @@
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    background-color: #F5F5F5;
+    background: linear-gradient(#7d5ebf, #009df5,#00d1f9, #53fbdd); /* Para animación fondo gradient*/
+    background-size: 300% 300%;
+    animation: bg 12s ease infinite;
+
+}
+
+/*animación fondo gradient*/
+@keyframes bg{
+    0%{
+        background-position: 0% 50%; 
+    } 
+    50%{
+        background-position: 100% 100%;        
+    }
+    100%{
+        background-position: 0% 50%;
+
+    }
 }
 
 .experience__section__title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 2rem;
+    color: #7d5ebf;
+    text-shadow:
+    0 0 3px white,
+    0 0 8px white,
+    0 0 10px white;
 }
 
-.experiencie__box{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 10rem 3rem;
-    gap: 1rem;
+.experience__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.experiencie__box:nth-child(odd){
-    flex-direction: row-reverse;
+.experience__card{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
 }
+
+.experience__card:hover{
+    transform: translateY(-5px);
+}
+
+.experience__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.experience__info {
+    padding: 1rem;
+}
+
 
 .experience__title{
-    font-size: 1.375rem;
+    font-size: 30px;
     font-weight:700;
     line-height: 1.5rem;
     padding-top: 1rem;
+    color: #7d5ebf;
 }
 
 .experience__text{
-    font-size:1rem;
+    font-size:20px;
     font-weight: 500;
     padding-top: 0.5rem;
 }
@@ -40,9 +84,10 @@
 .experiencia__botao--repo{
     margin: 0.5rem;
     border:1px solid;
-    border-color: #2A7AE4;
-    color: #2A7AE4;
-    font-size: 1rem;
+    border-color: #009df5;
+    color: #009df5;
+    border-radius: 6px;
+    font-size: 20px;
     width: 116px;
     height: 51px;
     cursor: pointer;  
@@ -51,10 +96,11 @@
 .experience__botao--demo{
     margin: 0.5rem;
     border:1px solid;
-    border-color: #2A7AE4;
-    background-color: #2A7AE4;
+    border-color: #00d1f9;
+    background-color: #00d1f9;
     color: #fff;
-    font-size: 1rem;
+    border-radius: 6px;
+    font-size: 20px;
     width: 116px;
     height: 51px;
     cursor: pointer;
@@ -62,11 +108,7 @@
 
 @media (max-width: 768px){
     .experiencie__box{
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 5rem 1rem;
-        gap: 2rem;  
+        width: 90%;  
     }
     .experience__img{
         width: 60%;
