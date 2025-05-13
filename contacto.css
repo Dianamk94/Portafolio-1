@@ -37,16 +37,18 @@
 }
 
 .formcontato__title{
+    color: #53fbdd;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.375rem; 
     padding-bottom: 0.5rem;
  }
 
 .formcontato__subtext{
+  color: #f5f5f5;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
 }
 
 .formcontato__form{
@@ -59,7 +61,7 @@
 
 .formcontato__input{
     box-sizing: border-box;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     background-color: #fff;
@@ -75,6 +77,7 @@
 
 .formcontato__input::placeholder, .formcontato__textarea::placeholder{
     visibility: hidden;
+    
 
 }
 
@@ -111,14 +114,20 @@
     color: #A2A2A2;
 }
 .formcontato__botao{
-    width: 165px;
+    width: 200px;
     height: 51px;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: #2A7AE4;
+    font-size: 1.40rem;
+    font-weight: 600;
+    background-color: #53fbdd;
+    border-radius: 10px;
     border: none;
-    color: #fff;
+    color: #9276cf;
     cursor: pointer;
+}
+
+.formcontato__botao:hover{
+  background-color: #7d5ebf;
+  color: #f5f5f5;
 }
 
 .formcontato__input:not(:placeholder-shown) + .input-label,

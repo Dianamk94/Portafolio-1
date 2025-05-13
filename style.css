@@ -23,6 +23,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1000;/* para que esté por encima de otros elementos */
+    height: 32px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -40,7 +41,7 @@ nav{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     color: #7d5ebf;
     padding-left: 5px;
     padding-top: 3px;
@@ -58,11 +59,18 @@ nav{
 .enlaces-container a{
     text-decoration: none;
     color: #009df5;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
 
 }
+
+.enlaces-container a:hover {
+    color: #0460D9;            
+    transform: scale(1.1);     /* Hace un pequeño zoom (10% más grande) */
+}
+
 .enlaces-container a:nth-child(6){
     color: #009df5;
     font-weight: 700;
@@ -76,7 +84,7 @@ nav{
     box-sizing: content-box;
     margin-top: 82.33px;
     height: 450px;
-    padding-left: 200px;
+    padding-left: 100px;
     background: linear-gradient(#7d5ebf, #009df5,#00d1f9, #53fbdd); /* Para animación fondo gradient*/
     background-size: 300% 300%;
     animation: bg 12s ease infinite;
@@ -108,7 +116,7 @@ nav{
     font-weight: 700;
     font-size: 52px;
     color: #7d5ebf;
-    padding-top: 60px;
+    padding-top: 52px;
     text-shadow:
     0 0 3px white,
     0 0 8px white,
@@ -120,7 +128,8 @@ nav{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    line-height: 1.5;  /* Interlineado */
+    font-size: 22px;
     color: #F5F5F5;
 }
 .links-container{
@@ -130,13 +139,13 @@ nav{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     text-decoration: none;
     color: #7d5ebf;
 }
 .links-container img{
     position: relative;
-    top: 4px;
+    top: 10px;
 }
 .perfil-container{
     position: relative;
@@ -165,21 +174,22 @@ nav{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 400px;
+    padding-left: 300px;
     padding-top: 80px;
 }
 .seccion-sobremi h2{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     color: #53fbdd;
 }
 .seccion-sobremi p{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 19px;
+    line-height: 1.5;
     color: #F5F5F5;
     padding-top: 30px;
     
