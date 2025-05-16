@@ -32,6 +32,8 @@ nav{
     padding: 25px;
 }
 
+
+
 .mi-logo{
     display: flex;
     align-items: center;
@@ -195,18 +197,30 @@ nav{
     
 }
 
-/*Responsive*/
+/* ===== Media Queries para Responsive Design ===== */
+
+
+/*Pantallas pequeñas /Ipad pro*/
 @media (max-width: 1440px){ 
     .seccion1-container{
         display: flex;
         justify-content: space-evenly;
         box-sizing: content-box;
-        height: 450px;
+        height: 420px;
         padding-left: 100px;
-        background-color: #F5F5F5;
+        
     }
     .perfil-container{
         right: 50px;   
+    }
+
+    .seccion1-container h1{
+        font-size: 45px;
+
+    }
+    .perfil-container img{
+        width: 280px;
+        height: auto;
     }
     .mi-logo{
         right: 100px;
@@ -215,16 +229,16 @@ nav{
         padding-left: 10px;
     }
     .seccion2-container{
-        display: flex;
-        background-color: #EAF2FD;
+        display: flex;        
         width: 100%;
-        height: 360px;
+        height: 430px;
     }
     .seccion-sobremi{
-        padding-left: 180px;
+        padding-left: 80px;
+        padding-right: 30px;
     }
 }
-
+ /* --------------------Ipad -------------*/
 @media (max-width: 768px){ 
     .enlaces-container{
         left: 30px; 
@@ -237,16 +251,15 @@ nav{
         padding-left: 10px;
     }
     .seccion1-container{
-        height: 550px;
+        height: 400px;
         padding-left: 50px;
-        background-color: #F5F5F5;
+        
     }
     .seccion-1 h1{
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 42px;
-        color: #464646;
+        font-size: 32px;        
         padding-top: 60px;
     }
     .seccion-1 p{
@@ -254,8 +267,9 @@ nav{
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        color: #464646;
+        font-size: 18px;
+        padding-right: 50px;
+        
     }
     .perfil-container{
         right: 20px;
@@ -267,25 +281,30 @@ nav{
     }
     .seccion2-container{
         display: flex;
-        background-color: #EAF2FD;
+        background-color: #009df5;
         width: 100%;
-        height: 367px;
+        height: 400px;
+        
+        
     }
     .seccion-sobremi{
         padding-left: 50px;
         padding-top: 40px;
     }
+
+    
     .seccion-sobremi p{
         padding-right: 50px;
+        
     }
 }
-
-@media screen and (max-width: 414px){
+/* CELULAR ------------------------------*/
+@media screen and (max-width: 480px){
     nav{
-        display: flex;
-        background-color: #F5F5F5;
+        display: flex;        
         padding: 15px;
     }
+     
     .mi-logo{
         position: absolute;
         left: 10px;
@@ -299,8 +318,7 @@ nav{
         font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
-        color: #464646;
+        font-size: 16px;        
         padding-left: 5px;
         padding-top: 3px;
     
@@ -313,8 +331,7 @@ nav{
         
     }
     .enlaces-container a{
-        text-decoration: none;
-        color: #464646;
+        text-decoration: none;        
         font-weight: 500;
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
@@ -339,6 +356,10 @@ nav{
         padding-top: 2px;
     }
 
+    .links-container {
+        text-align: center;
+    }
+
     .perfil-container{
         position: absolute;
         left: 70px;
@@ -352,36 +373,50 @@ nav{
         width: 268px;
         height: 268px;
         border-radius: 200px;
+        margin-top: 20PX;
     }
+    
 
     .seccion1-container{
-        height: 780px;
-        padding-left: 30px;
-        padding-right: 20px;
-        background-color: #F5F5F5;
+        height: 700px;
+        margin-top: 50PX;
+        padding-left: 10px;
+        padding-right: 10px;
+        
     }
-    .seccion-1{
-        padding-top: 200px;   
+    .seccion-1 h1{
+        text-align: center;
+        margin-top: 10px;
+        
     }
+    .seccion-1 p{
+        text-align: center;
+        padding: 0 0 0 0;
+        margin-top: 15px;
+        
+    }
+    
     .seccion2-container{
-        display: flex;
-        background-color: #EAF2FD;
+        display: flex;        
         width: 100%;
-        height: 480px;
+        height: 450px;
+        
     }
     .seccion-sobremi{
         padding-left: 30px;
         padding-top: 40px;
+        background-color: #009df5;
+        
     }
     .seccion-sobremi p{
         padding-right: 30px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 390px){
     nav{
-        display: flex;
-        background-color: #F5F5F5;
+        display: flex;        
         padding: 15px;
     }
     .mi-logo{
@@ -397,8 +432,7 @@ nav{
         font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
-        color: #464646;
+        font-size: 16px;        
         padding-left: 5px;
         padding-top: 3px;
     
@@ -411,8 +445,7 @@ nav{
         
     }
     .enlaces-container a{
-        text-decoration: none;
-        color: #464646;
+        text-decoration: none;        
         font-weight: 500;
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
@@ -455,9 +488,9 @@ nav{
     .seccion1-container{
         height: 780px;
         padding-left: 30px;
-        padding-right: 20px;
-        background-color: #F5F5F5;
+        padding-right: 20px;        
     }
+
     .seccion-1{
         padding-top: 200px;   
     }
@@ -467,11 +500,11 @@ nav{
     }
 
     .seccion2-container{
-        display: flex;
-        background-color: #EAF2FD;
+        display: flex;        
         width: 100%;
         height: 480px;
     }
+    
     .seccion-sobremi{
         padding-left: 30px;
         padding-top: 40px;
